@@ -14,7 +14,6 @@ const Sidebar: React.FC<SidebarProps> = ({ providers, close }) => {
     <div className="fixed inset-0 bg-black/40 z-50">
       <div className="absolute right-0 top-0 h-full w-96 bg-cyan-700 p-4 overflow-y-auto">
 
-        {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-semibold text-white">
             {selectedProvider || "Select Provider"}
@@ -22,7 +21,6 @@ const Sidebar: React.FC<SidebarProps> = ({ providers, close }) => {
           <button onClick={close} className="text-white text-xl hover:text-red-700 hover:text-2xl">✕</button>
         </div>
 
-        {/* Providers */}
         {providers.map(provider => (
           <div key={provider} className="border-b border-white/20 pb-2">
 
